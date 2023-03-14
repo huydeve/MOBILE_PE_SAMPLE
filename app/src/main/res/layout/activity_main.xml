@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#BB2649"
+        android:textColor="#FFFFFF"
+        android:drawablePadding="-15dp"
+        android:onClick="addProduct"
+        android:text="Add Clock" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:onClick="deleteProduct"
+        android:layout_margin="20dp"
+        android:background="#BB2649"
+        android:textColor="#FFFFFF"
+        android:drawablePadding="-16dp"
+        android:text="Delete Clock"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#BB2649"
+        android:textColor="#FFFFFF"
+        android:drawablePadding="-16dp"
+        android:onClick="updateProduct"
+        android:text="Update Clock" />
+
+    <TextView
+        android:id="@+id/txtColumnName"
+        android:layout_width="290dp"
+        android:layout_height="33dp"
+        android:layout_margin="20dp"
+        android:text="ID        Name          Price"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/txtData"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
